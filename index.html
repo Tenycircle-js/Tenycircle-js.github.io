@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Tenycircle.js</title>
-    <link rel="stylesheet" href="Assets/styles.css">
-    <link rel="icon" href="Assets/icon.svg">
     <script src="Assets/main.js" crossorigin="anonymous"></script>
-    <script>
-    document.addEventListener("DOMContentLoaded",_=>{
-        include("Assets/navbar.html","navbar")
-        include("Assets/table.html","table")
-      })
-    </script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Assets/Tenycircle.logo.svg">
+    <title>Tenycircle.js</title>
+    <include href="Assets/styles.css" type="css"></include>
   </head>
-  <body>
-    <include id="navbar"></include>
+  <body style="display:none;" onload="document.body.style.display = 'block'">
+    <include href="navbar.html" type="html"></include>
     <header>
       <a href="/">
-        <img src="Assets/Tenycircle.logo.svg">
+        <img src="Tenycircle.logo.svg">
         <h1 inline >
           <i style="font-size:55px;" bold >
             Tenycircle.js
           </i>
-        </a></h1>
+         </a></h1>
       </a>
     </header>
     <div id="index">
@@ -87,7 +81,7 @@
         </p>
         <tag id="メソッド一覧"></tag>
         <h1 heading ><a href="#メソッド一覧">メソッド一覧</a></h1>
-        <include id="table"></include>
+        <include href="table.html" type="html"></include>
       </p>
     </main>
     <footer>
