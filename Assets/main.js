@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded",_=>{
+window.addEventListener("load",_=>{
   document.querySelectorAll("include").forEach(element=>{
     switch(element.getAttribute("type")) {
       case "html": {
