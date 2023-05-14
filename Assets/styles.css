@@ -24,7 +24,7 @@ nav ul li {
 nav ul {
   padding-block:5px;
 }
-main , #index , [border] {
+main , #index , [border]:not("table") {
   margin-top:5px;
   border:2px solid dimgrey;
   padding-inline:5px;
