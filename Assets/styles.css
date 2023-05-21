@@ -37,6 +37,9 @@ code {
   border-radius:10px;
   padding:2px;
   border:2px solid darkgrey;
+  width:98%;
+  overflow:auto;
+  white-space:nowrap;
 }
 [red] {
   color:#ff7777;
