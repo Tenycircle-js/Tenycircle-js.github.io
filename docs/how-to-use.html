@@ -1,1 +1,87 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="Assets/main.js"></script>
+  <include href="Assets/styles.css" type="css"></include>
+  <title>docs/how-to-use</title>
+</head>
+<body>
+  <include href="Assets/navbar.html" type="html"></include>
+  <header>
+    <h1 heading style="margin-inline:5px;">Tenycircle.jsの導入方法</h1>
+  </header>
+  <main>
+    <h1 heading id="htmlタグで読み込む"><a href="#htmlタグで読み込む">htmlタグで読み込む</a></h1>
+    <p>
+      <p>
+        ダウンロードして読み込む方法
+      </p>
+      <p>
+        <code>
+          &lt;script&nbsp;src&#61;&quot;path/to/Tenycircle&#46;min&#46;js&quot;&gt;&lt;/script&gt;
+        </code>
+      </p>
+      <p>
+        公式cdnを使う方法
+      </p>
+      <p>
+        <code>
+          &lt;script&nbsp;src&#61;&quot;https&#58;//tenycircle&#45;js&#46;github&#46;io/cdn/js/Tenycircle&#46;min&#46;js&quot;&nbsp;integrity&#61;&quot;sha384&#45;4nX/dN0vDO/6v6NOwb986md5tUkB8okB0rmswUaXNk&#43;t8dylckglmhzMx/QDN1n1&quot;&nbsp;crossorigin&#61;&quot;anonymous&quot;&gt;&lt;/script&gt;
+        </code>
+      </p>
+      <p>
+        ちょっと整形
+      </p>
+      <p>
+        <code>
+          &lt;script<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;src&#61;&quot;https&#58;//tenycircle&#45;js&#46;github&#46;io/cdn/js/Tenycircle&#46;min&#46;js&quot;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;integrity&#61;&quot;sha384&#45;4nX/dN0vDO/6v6NOwb986md5tUkB8okB0rmswUaXNk&#43;t8dylckglmhzMx/QDN1n1&quot;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;crossorigin&#61;&quot;anonymous&quot;<br>
+          &gt;&lt;/script&gt;
+        </code>
+      </p>
+    </p>
+    <h1 heading id="import"><a href="#import">import</a></h1>
+    <p>
+      <p>
+        <a href="//github.com/Tenycircle-js/Tenycircle.mjs">Tenycircle.mjs</a>のTenycircle.mjsのcdnを読み込む
+      </p>
+      <h2>全てをインポート</h2>
+      <p>
+        <code>
+          import * as $ from 'https://tenycircle-js.github.io/cdn/mjs/Tenycircle.mjs'
+        </code>
+      </p>
+      <h2>限定的にインポートする</h2>
+      <p>
+        <code>
+          import { funcname } from 'https://tenycircle-js.github.io/cdn/mjs/Tenycircle.mjs'
+        </code>
+      </p>
+      <p>
+        ※funcnameはインポートしたい関数の名前を入れてください
+      </p>
+    </p>
+  </main>
+  <footer right>
+    <div>
+      <button>
+        <a href="#">topに戻る</a>
+      </button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"width="240"height="240">
+      <circle cx="12"cy="12"r="10"fill="#4d4d4d" />
+      <circle cx="12"cy="12"r="6"fill="silver" />
+      <text x="5"y="22"font-size="9"bold fill="#888888">T C</text>
+    </svg>
+    <i style="font-size:55px;" bold>Tenycircle.js</i>
+    <div>
+      <button>
+        <a href="/docs">docsに戻る</a>
+      </button>
+    </div>
+  </footer>
+</body>
+</html>
