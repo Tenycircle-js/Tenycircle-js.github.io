@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="Assets/icon.svg">
     <title>Tenycircle.js</title>
-    <include href="Assets/styles.css" type="css"></include>
+    <include href="Assets/styles.css" type="css" />
   </head>
   <body style="display:none;" onload="document.body.style.display = 'block'">
     <include href="Assets/navbar.html" type="html"></include>
@@ -45,42 +45,38 @@
       </ol>
     </div>
     <main>
-      <tag id="Tenycircle.jsとは?"></tag>
-      <h1 heading ><a href="#Tenycircle.jsとは?">Tenycircle.jsとは?</a></h1>
+      <h1 heading id="Tenycircle.jsとは?"><a href="#Tenycircle.jsとは?">Tenycircle.jsとは?</a></h1>
       <p>
         Tenycircle.jsは、軽量で高速なライブラリであり、<br>
         DOM操作や演算を得意とします
       </p>
-      <tag id="インストール方法"></tag>
-      <h1 heading ><a href="#インストール方法">インストール方法</a></h1>
+      <h1 heading id="インストール方法"><a href="#インストール方法">インストール方法</a></h1>
       <p>
         githubからファイルをダウンロードし、<br>
         <code>
-          <span red >&lt;script<span green >&nbsp;src<span white >&#61;</span><span yellow >&quot;pass&frasl;to&frasl;Tenycircle.js&quot;</span></span>&gt;&lt;&frasl;script&gt;</span>
+          <span red >&lt;script<span green >&nbsp;src<span white >&#61;</span><span yellow >&quot;pass/to/Tenycircle.js&quot;</span></span>&gt;&lt;/script&gt;</span>
         </code>
         <br>
         または、jsdelivrからcdnを取得する方法もあります<br>
         <code>
-          <span red >&lt;script</span>&nbsp;<span green >src</span><span white >&#61;</span><span yellow >&quot;https&#58;&frasl;&frasl;cdn.jsdelivr.net&frasl;gh&frasl;Tenycircle&#45;js&frasl;Tenycircle.js&#64;main&frasl;TenyCircle.min.js&quot;</span><span red >&gt;&lt;&frasl;script&gt;</span>
+          <span red >&lt;script</span>&nbsp;<span green >src</span><span white >&#61;</span><span yellow >&quot;https&#58;//cdn.jsdelivr.net/gh/Tenycircle&#45;js/Tenycircle.js&#64;main/TenyCircle.min.js&quot;</span><span red >&gt;&lt;/script&gt;</span>
         </code>
         <br>
-        <tag id="使用方法"></tag>
-        <h1 heading ><a href="#使用方法">使用方法</a></h1>
+        <h1 heading id="使用方法"><a href="#使用方法">使用方法</a></h1>
         <p>
           基本メソッドは
-          <code>$</code>
+          <code inline>$</code>
           のメソッドに定義されています。
           <br>
           例えば
-          <code>id</code>
+          <code inline>id</code>
           メソッドを使うなら
           <p>&nbsp;<code style="color:grey;">$.id(<span green >"idname"</span>)</code></p>
           <p>
             のように書きます
           </p>
         </p>
-        <tag id="メソッド一覧"></tag>
-        <h1 heading ><a href="#メソッド一覧">メソッド一覧</a></h1>
+        <h1 heading id="メソッド一覧"><a href="#メソッド一覧">メソッド一覧</a></h1>
         <include href="Assets/table.html" type="html"></include>
       </p>
     </main>
@@ -90,11 +86,7 @@
           <a href="#">topへ戻る</a>
         </button>
         <div>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
+          <br row="4">
         <div right border >
           <big><big><h1 inline bold ><i>Tenycircle.js</i></h1></big></big>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="240" height="240">
@@ -103,31 +95,11 @@
             <text x="5" y="22" font-size="9" bold fill="#888888">T C</text>
           </svg>
         </div>
-        <div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        </div>
+        <br row="15">
         <div right >
           <p>現在<span bold >34メソッド</span>実装</p>
         </div>
-        <div>
-          <br>
-          <br>
-          <br>
-        </div>
+        <br row="4">
       </div>
     </footer>
   </body>
