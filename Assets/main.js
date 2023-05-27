@@ -24,4 +24,10 @@ window.addEventListener("load",_=>{
       }
     }
   })
+  document.querySelectorAll`br[row]`.forEach(element=>{
+    for(let i = ((+(element.getAttribute`row`))-1);i--;) {
+      let br = document.createElement`br`
+      element.parentNode.insertBefore(br,element);
+    }
+  })
 })
