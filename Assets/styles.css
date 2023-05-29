@@ -32,8 +32,8 @@ main , #index {
 main p {
   margin-left:7px;
 }
-:not(td) > code {
-  display:block;
+code {
+  display:inline;
   background:#adadad;
   border-radius:10px;
   padding:2px;
@@ -41,6 +41,9 @@ main p {
   width:98%;
   overflow:auto;
   white-space:nowrap;
+}
+:not(td) > code {
+  display:block;
 }
 [red] {
   color:#ff7777;
