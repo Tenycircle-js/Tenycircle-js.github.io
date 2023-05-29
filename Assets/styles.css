@@ -114,3 +114,13 @@ h1[heading] a {
 [right]:after {
   clear:both;
 }
+:is(article, section) h1 {
+  font-size:2em;
+}
+:is(h1,h2,h3,h4,h5,h6) a {
+  display:block;
+}
+[indent] {
+  margin-left:10px;
+  margin-right:5px;
+}
