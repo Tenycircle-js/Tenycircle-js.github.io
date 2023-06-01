@@ -110,7 +110,7 @@ footer {
 [right]:after {
   clear:both;
 }
-:is(article, section) :is(h1,.h1) {
+:is(h1,.h1) {
   font-size:2em;
 }
 [indent] {
