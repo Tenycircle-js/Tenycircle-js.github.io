@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <base href="https://Tenycirclejs.github.io">
     <script defer src="Assets/main.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <link rel="icon" href="Assets/icon.svg">
@@ -10,51 +11,76 @@
     <meta name="keywords" content="Tenycircle.js, JavaScript, ライブラリ, DOM操作, 演算">
     <link rel="canonical" href="https://tenycirclejs.github.io/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/ld+json">
+    {
+      "@context":"http://schema.org",
+      "@type":"website",
+      "name":"Tenycircle.js",
+      "inLanguage":"jp",
+      "publisher": {
+        "@type": "Organization",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://Tenycirclejs.github.io/Assets/Tenycircle.logo.svg"
+        }
+      },
+      "headline":"Tenycircle.js homepage",
+      "description":"Tenycircle.jsとは、軽量で高速なライブラリであり、DOM操作や演算を得意するjavascriptライブラリです",
+      "url":"https://Tenycirclejs.github.io"
+    }
+    </script>
   </head>
   <body itemscope="itemscope" itemtype="https://schema.org/WebPage">
-    <include itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" href="Assets/navbar.html" type="html"></include>
-    <header itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
-      <a href="/" itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/Brand">
+    <include itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" href="Assets/navbar.html" type="html"></include>
+    <header itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner" class="header-wrapper">
+      <div class="header-inner">
+      <a href="/" itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Brand">
         <img itemprop="logo" src="Assets/Tenycircle.logo.svg" alt="Tenycircle.jsのロゴ">
         <h1 inline itemprop="name">
           <i style="font-size:55px;" bold >Tenycircle.js</i>
           <span inline> - JavaScriptライブラリ</span>
         </h1>
       </a>
+      </div>
     </header>
     <nav role="navigation" id="index" itemscope="itemscope" itemtype="https://schema.org/TableOfContents" aria-label="ページ内目次" class="toc-wrapper">
+      <div class="toc-inner">
       <h2 heading class="h1"><a itemprop="name">目次</a></h2>
       <ol>
-        <li itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+        <li itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
           <h3 itemprop="name">
             <a href="#Tenycircle.jsとは?" itemprop="item">Tenycircle.jsとは?</a>
           </h3>
         </li>
-        <li itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+        <li itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
           <h3 itemprop="name">
             <a href="#インストール方法" itemprop="item">インストール方法</a>
           </h3>
         </li>
-        <li itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+        <li itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
           <h3 itemprop="name">
             <a href="#使用方法" itemprop="item">使用方法</a>
           </h3>
         </li>
-        <li itemprop="haspart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
+        <li itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/ListItem">
           <h3 itemprop="name">
             <a href="#メソッド一覧" itemprop="item">メソッド一覧</a>
           </h3>
         </li>
       </ol>
+      </div>
     </nav>
     <main itemprop="mainElement" role="main" itemscope="itemscope" itemtype="https://schema.org/WebPageElement">
+      <div class="main-wrapper">
+      <article itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Article">
+      <div itemprop="articleBody">
       <h2 itemprop="headline" heading class="h1" id="Tenycircle.jsとは?"><a href="#Tenycircle.jsとは?">Tenycircle.jsとは?</a></h2>
       <p itemprop="description">
         Tenycircle.jsは、軽量で高速なライブラリであり、<br>
         DOM操作や演算を得意とします
       </p>
-      <h2 heading class="h1" id="インストール方法"><a href="#インストール方法">インストール方法</a></h2>
-      <p>
+      <h2 heading itemprop="headline" class="h1" id="インストール方法"><a href="#インストール方法">インストール方法</a></h2>
+      <p itemprop="description">
         githubからファイルをダウンロードし、<br>
         <code>
           <span red >&lt;script<span green >&nbsp;src<span white >&#61;</span><span yellow >&quot;pass/to/Tenycircle.js&quot;</span></span>&gt;&lt;/script&gt;</span>
@@ -79,9 +105,12 @@
             のように書きます
           </p>
         </p>
-        <h2 heading class="h1" id="メソッド一覧"><a href="#メソッド一覧">メソッド一覧</a></h2>
-        <include href="Assets/table.html" type="html"></include>
+        <h2 itemprop="headline" heading class="h1" id="メソッド一覧"><a href="#メソッド一覧">メソッド一覧</a></h2>
+        <include itemprop="description" href="Assets/table.html" type="html"></include>
       </p>
+      </div>
+      </article>
+      </div>
     </main>
     <footer itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
       <div><button>
