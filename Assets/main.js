@@ -1,5 +1,5 @@
 window.addEventListener("load",_=>{
-  document.querySelectorAll("include").forEach(element=>{
+  document.querySelectorAll(":is(include,.include)[type]").forEach(element=>{
     switch(element.getAttribute("type")) {
       case "html": {
         fetch(element.getAttribute("href"))
