@@ -25,7 +25,7 @@ window.addEventListener("load",_=>{
     }
   })
   document.querySelectorAll("br[data-row]").forEach(element=>{
-    for(let i = ((+element.dataset.row)-1);i--;) {
+    for(let i = ((+(element.dataset.row))-1);i--;) {
       let br = document.createElement("br")
       element.parentNode.insertBefore(br,element);
     }
