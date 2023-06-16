@@ -2,7 +2,7 @@ window.addEventListener("load",_=>{
   document.querySelectorAll(".include[data-type]").forEach(element=>{
     switch(element.dataset.type)) {
       case "html": {
-        fetch(element.dataset.src))
+        fetch(element.dataset.src)
         .then(response=>response.text())
         .then(data=>element.innerHTML=data)
         .catch(console.error)
