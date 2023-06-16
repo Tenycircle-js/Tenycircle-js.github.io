@@ -1,6 +1,6 @@
 window.addEventListener("load",_=>{
   document.querySelectorAll(":is(include,.include)[data-type]").forEach(element=>{
-    switch(element.dataset.type")) {
+    switch(element.dataset.type)) {
       case "html": {
         fetch(element.dataset.src))
         .then(response=>response.text())
