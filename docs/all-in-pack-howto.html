@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+    <base href="https://Tenycirclejs.github.io/docs/all-in-pack-howto">
+    <script defer src="/Assets/main.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Assets/icon.svg">
+    <title>all-in-packの使い方 - Tenycircle.js docs</title>
+    <link href="/Assets/styles.css" rel="stylesheet">
+    <meta name="description" content="all-in-packは、拡張機能も全て含んだパックです">
+    <meta name="keywords" content="Tenycircle.js, JavaScript, ライブラリ, all-in-pack">
+    <link rel="canonical" href="https://Tenycirclejs.github.io/docs/all-in-pack-howto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="max-image-preview:large">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://Tenycirclejs.github.io/docs/all-in-pack-howto">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "BreadcrumbList", 
+      "itemListElement": [{
+       "@type": "ListItem", 
+        "position": 1, 
+        "name": "HOME",
+        "item": "https://Tenycirclejs.github.io/"  
+      },{
+        "@type": "ListItem", 
+        "position": 2, 
+        "name": "docs",
+        "item": "https://Tenycircle.js.github.io/docs/"  
+      },{
+        "@type": "ListItem", 
+        "position": 3, 
+        "name": "all-in-pack howto",
+        "item": "https://Tenycirclejs.github.io/docs/all-in-pack-howto"  
+      }]
+    }
+    </script>
+  </head>
+  <body itemscope="itemscope" itemtype="https://schema.org/WebPage">
+    <nav class="include" itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement" data-src="/Assets/navbar.html" data-type="html"></nav>
+    <header itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner" class="header-wrapper">
+      <div class="header-inner">
+        <img itemprop="logo" src="/Assets/Tenycircle.logo.svg" alt="Tenycircle.jsのロゴ">
+        <h1 inline style="font-size:55px;" bold >all-in-packの使い方</h1>
+      </div>
+    </header>
+    <nav role="navigation" id="index" itemscope="itemscope" itemtype="https://schema.org/NavigationElement" aria-label="ページ内目次" class="toc-wrapper">
+      <div class="toc-inner">
+        <h2 heading class="h1">
+          <a itemprop="name">目次</a>
+        </h2>
+        <ol>
+          <li itemscope="itemscope" itemtype="https://schema.org/ListItem">
+            <h3 itemprop="name">
+              <a href="#all-in-packとは?" itemprop="item">all-in-packとは?</a>
+            </h3>
+          </li>
+          <li itemscope="itemscope" itemtype="https://schema.org/ListItem">
+            <h3 itemprop="name">
+              <a href="#使用方法" itemprop="item">使用方法</a>
+            </h3>
+          </li>
+          <li itemscope="itemscope" itemtype="https://schema.org/ListItem">
+            <h3 itemprop="name">
+              <a href="#初期化方法" itemprop="item">初期化方法</a>
+            </h3>
+          </li>
+        </ol>
+      </div>
+    </nav>
+    <main role="main" itemscope="itemscope" itemtype="https://schema.org/WebPageElement">
+      <div class="main-wrapper">
+        <article itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Article">
+          <div itemprop="articleBody">
+            <section itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Chapter">
+              <h2 itemprop="headline" heading class="h1" id="all-in-packとは?">
+                <a href="#Tenycircle.jsとは?" itemprop="name">all-in-packとは?</a>
+              </h2>
+              <p itemprop="description">
+                all-in-packとは、Tenycircle.jsと拡張機能を含んだパックであり、<br>
+                一括で制御できます。
+              </p>
+            </section>
+            <section itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Chapter">
+              <h2 heading itemprop="headline" class="h1" id="使用方法">
+                <a href="#使用方法" itemprop="name">使用方法</a>
+              </h2>
+              <p itemprop="description">
+                githubからファイルをダウンロードし、
+                <br>
+              <code>
+                <span red >&lt;script<!
+                 ><span green >&nbsp;src<!
+                   ><span white >&#61;</span><!
+                   ><span yellow >&quot;pass/to/Tenycircle.all.min.js&quot;</span><!
+                 ></span>&gt;&lt;/script&gt;
+                </span>
+              </code>
+              <br>または、このページからcdnを取得する方法もあります
+              <br>
+              <code>
+                <span red >&lt;script</span>&nbsp;<!
+               ><span green >src</span><!
+               ><span white >&#61;</span><!
+               ><span yellow >&quot;https&#58;//Tenycirclejs.github.io/cdn/all/TenyCircle.all.min.js&quot;</span><!
+               ><span red >&gt;&lt;/script&gt;</span>
+              </code>
+              </p>
+            </section>
+            <section itemprop="hasPart" itemscope="itemscope" itemtype="https://schema.org/Chapter">
+              <h2 heading class="h1" id="初期化方法">
+                <a href="#初期化方法" itemprop="name">初期化方法</a>
+              </h2>
+              <p itemprop="description">
+                <span>初期化しないとなにもできませんので</span> 
+                <span><code inline>$.init</code>関数を使います</span>
+                <br>
+                例えば
+                全て(拡張機能込)を使うなら
+                <p>&nbsp;
+                  <code style=color:#dcdcdc;>
+                    <span>$.<span green>init</span>(<span red>function</span>(){</span><br><!
+                   ><span>&nbsp;&nbsp;$.<span green>init</span>().<span green>useall</span>()</span><br><!
+                   ><span>})</span>
+                  </code>
+                のように書きます</p>
+                <p>また、Tenycircle.jsだけ使う時は、</p>
+                <p>&nbsp;
+                  <code style=color:#dcdcdc;>
+                    <span>$.<span green>init</span>(<span red>function</span>(){</span><br><!
+                   ><span>&nbsp;&nbsp;$.<span green>init</span>().<span green>usemain</span>()</span><br><!
+                   ><span>})</span>
+                  </code>
+                のように書きます</p>
+                <p>拡張機能も使う時は</p>
+                <p>&nbsp;
+                  <code style=color:#dcdcdc;>
+                    <span>$.<span green>init</span>(<span red>function</span>(){</span><br><!
+                   ><span>&nbsp;&nbsp;$.<span green>init</span>().<span green>usemain</span>()</span><br><!
+                   ><span>&nbsp;&nbsp;$.<span green>init</span>().<span green>useex</span>(<span green>拡張機能名(instanceやDOMなど)</span>)</span><br><!
+                   ><span>})</span>
+                  </code>
+                のように書きます</p>
+              </p>
+            </section>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo" class="footer-wrapper">
+      <div class="footer-inner">
+        <div>
+          <button>
+            <a href="#">topへ戻る</a>
+          </button>
+        </div>
+        <br data-row="4">
+        <div class="footer-info">
+          <div right class="footer-logo" itemscope="itemscope" itemtype="https://schema.org/Brand">
+            <big><big><h2 inline bold class="h1">
+              <i itemprop="name">Tenycircle.js</i>
+            </h2></big></big>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='240' height='240'%3E%3Ccircle cx='12' cy='12' r='10' fill='%234d4d4d'/%3E%3Ccircle cx='12' cy='12' r='6' fill='silver'/%3E%3Ctext x='5' y='22' font-size='9' font-weight='bold' fill='%23888888'%3ET C%3C/text%3E%3C/svg%3E" alt="Tenycircle.jsのロゴ">
+            <meta content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='240' height='240'%3E%3Ccircle cx='12' cy='12' r='10' fill='%234d4d4d'/%3E%3Ccircle cx='12' cy='12' r='6' fill='silver'/%3E%3Ctext x='5' y='22' font-size='9' font-weight='bold' fill='%23888888'%3ET C%3C/text%3E%3C/svg%3E" itemprop="logo">
+          </div>
+        </div>
+        <br data-row="14">
+        <div right class="footer-stat">
+          <p>
+            <span>現在</span>
+            <span bold >34メソッド</span>
+            <span>実装</span>
+          </p>
+        </div>
+        <br data-row="2">
+      </div>
+    </footer>
+  </body>
+</html>
