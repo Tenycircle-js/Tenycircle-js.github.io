@@ -4,7 +4,7 @@
   <title>download - docs</title>
   <meta charset="UTF-8"/>
   <script src="/Assets/main.js"></script>
-  <include href="/Assets/styles.css" type="css">
+  <link href="/Assets/styles.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="canonical" href="https://Tenycirclejs.github.io/download"> 
   <meta content="Tenycircle.jsのdownloadです" name="description">
@@ -17,9 +17,7 @@
   <meta property="og:locale" content="ja_JP">
 </head>
 <body>
-  <aside>
-    <include href="/Assets/navbar.html" type="html"></include>
-  </aside>
+  <nav class="include" data-src="/Assets/navbar.html" data-type="html"></nav>
   <header>
     <h1 heading style="margin-inline:5px;">ダウンロード方法について</h1>
   </header>
@@ -83,7 +81,7 @@
         <text x="5" y="22" font-size="9" bold fill="#888888">T C</text>
       </svg>
     </div>
-    <br row="14">
+    <br data-row="14">
   </footer>
 </body>
 </html>
