@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <title>docs/browser-support</title>
   <script src="/Assets/main.js"></script>
-  <include href="/Assets/styles.css" type="css"></include>
+  <link rel="stylesheet" href="/Assets/styles.css" type=">
 </head>
 <body>
-  <include href="/Assets/navbar.html" type="html"></include>
+  <div data-src="/Assets/navbar.html" data-type="html"></div>
   <header>
     <h1 style="margin-inline:5px;"heading>ブラウザサポート表</h1>
   </header>
   <main>
-    <h1 heading>ブラウザサポート表</h1>
+    <h2 heading class="h1">ブラウザサポート表</h2>
     <p>
       <table border="5">
         <tbody>
@@ -45,13 +45,15 @@
       </table>
     </p>
   </main>
-  <footer right>
-    <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"width="240"height="240">
-      <circle cx="12"cy="12"r="10"fill="#4d4d4d" />
-      <circle cx="12"cy="12"r="6"fill="silver" />
-      <text x="5"y="22"font-size="9"bold fill="#888888">T C</text>
-    </svg>
-    <i style="font-size:55px;" bold>Tenycircle.js</i>
+  <footer>
+    <div right>
+      <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 24 24"width="240"height="240">
+        <circle cx="12"cy="12"r="10"fill="#4d4d4d" />
+        <circle cx="12"cy="12"r="6"fill="silver" />
+        <text x="5"y="22"font-size="9"bold fill="#888888">T C</text>
+      </svg>
+      <i style="font-size:55px;" bold>Tenycircle.js</i>
+    </div>
   </footer>
 </body>
 </html>
